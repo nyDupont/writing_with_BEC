@@ -1,6 +1,6 @@
 # Writing with BEC
 
-A small Python toolkit that turns text into an image made of real absorption images of ultracold-atom **Bose-Einstein condensates (BEC)**. Each "pixel" of the rendered text is an actual experimental optical-density (OD) picture of a condensate, taken at LCAR (Laboratoire Collisions Agrégats Réactivité, Toulouse).
+A small Python toolkit that turns text into an image made of real absorption images of ultracold-atom **Bose-Einstein condensates (BEC)**. Each pixel column of the rendered text is an actual experimental optical-density (OD) picture of a condensate, taken at LCAR (Laboratoire Collisions Agrégats Réactivité, Toulouse).
 
 This is the "BEC printer" used to produce the corresponding figure in the article and PhD theses cited below.
 
@@ -33,12 +33,6 @@ writing_with_BEC/
 - `numpy`
 - `matplotlib`
 
-Install with:
-
-```bash
-pip install numpy matplotlib
-```
-
 ## Usage
 
 1. Edit the `string` variable in `script.py` to whatever text you want to render (use `\n` for line breaks):
@@ -63,15 +57,16 @@ Useful `bec_write` keyword arguments: `randomize` (pick a random absorption shot
 
 ## Scientific context
 
-This code produces the **"BEC printer"** figure illustrating how single-shot absorption images of a Bose-Einstein condensate can be assembled into text, as a playful illustration of the amount and quality of experimental data produced by the BEC apparatus described in:
+This code produces the **"BEC printer"** and **"QUANTUM CONTROL"** figures featured in
 
 - N. Dupont, G. Chatelain, L. Gabardos, M. Arnal, J. Billy, B. Peaudecerf, D. Sugny, D. Guéry-Odelin, *"Quantum State Control of a Bose-Einstein Condensate in an Optical Lattice"*, PRX Quantum **2**, 040303 (2021). DOI: [10.1103/PRXQuantum.2.040303](https://doi.org/10.1103/PRXQuantum.2.040303)
+- C. P. Koch, U. Boscain, T. Calarco, G. Dirr, S. Filipp, S. J. Glaser, R. Kosloff, S. Montangero, T. Schulte-Herbrüggen, D. Sugny, F. K. Wilhelm, "Quantum optimal control in quantum technologies. Strategic report on current status, visions and goals for research in Europe", EPJ Quantum Technology 9, 19 (2022). DOI: [10.1140/epjqt/s40507-022-00138-x](https://doi.org/10.1140/epjqt/s40507-022-00138-x)
 
-The figure and the underlying experimental setup are also described in detail in the PhD theses of Nathan Dupont (LCAR, Université de Toulouse, supervised by David Guéry-Odelin):
+which illustrate how single-shot absorption images of optimally controled BECs released from an optical lattice can be assembled into text. Experimental details are presented in the following two PhD theses realized at LCAR (Université de Toulouse, supervised by David Guéry-Odelin):
 
-- N. Dupont, *"Contrôle optimal de condensats de Bose-Einstein dans un réseau optique"* (PhD thesis, in French), Université de Toulouse, 2022. [theses.hal.science/tel-03700049v2](https://theses.hal.science/tel-03700049v2)
-- N. Dupont, *"Optimal control of Bose-Einstein condensates in an optical lattice"* (PhD thesis, English version), Université de Toulouse, 2022. [theses.hal.science/tel-03997401v4](https://theses.hal.science/tel-03997401v4)
+- G. Chatelain, "_Façonnage d'ondes de matière dans un réseau optique dépendant du temps : du chaos quantique au contrôle quantique_" (PhD thesis, in French), Université de Toulouse, 2021. [theses.hal.science/tel-03700049v2](https://theses.hal.science/tel-03700049v2)
+- N. Dupont, "_Control and transport of matter waves in an optical lattice", not "Optimal control of Bose-Einstein condensates in an optical lattice_" (PhD thesis, in English), Université de Toulouse, 2022. [theses.hal.science/tel-03997401v4](https://theses.hal.science/tel-03997401v4)
 
 ## Author
 
-[Nathan Dupont](https://github.com/nyDupont) — PhD/postdoc in quantum physics.
+[Nathan Dupont](https://github.com/nyDupont) — PhD, Post Doc in quantum physics.
